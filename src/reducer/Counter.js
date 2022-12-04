@@ -1,12 +1,11 @@
-
 const initialstate = 0;
 
 export const changeNumber = (state=initialstate,action) => {
     switch (action.type) {
-        case increment:
-                return state+1;
+        case 'increment':
+                return state + action.payload;
             break;
-        case decrement:
+        case 'decrement':
             return state-1;
         break;
     

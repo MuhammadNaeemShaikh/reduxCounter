@@ -1,7 +1,8 @@
 
-export const incNumber = () => {
+export const incNumber = (num) => {
     return {
         type: "increment",
+        payload:num
     }
 }
 
